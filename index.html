@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>High Adventures</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>High Adventures</h1>
+    </header>
+    <div class="container">
+
+        <!-- Form -->
+        <form name="userDataForm" class="form-horizontal">
+
+            <!-- User input -->
+            <!-- User age -->
+            <div class="form-group">
+                <label class="control-label col-sm-2">Please enter your age</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" placeholder="Your age" autofocus name="age" required="required">
+                </div>
+            </div>
+
+            <!-- User weight -->
+            <div class="form-group">
+                <label class="control-label col-sm-2">Weight (kg)</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" placeholder="Your weight" autofocus name="weight" required>
+                    </div>
+            </div>
+
+            <!-- User height -->
+            <div class="form-group">
+                <label class="control-label col-sm-2">Height (cm)</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" placeholder="Your height" name="height" required>
+                    </div>
+            </div>
+
+            <!-- Calculate button -->
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input type="button" value="Submit" class="submitButton" onClick="calculateUserData(); submitForm()">
+                </div>
+            </div>
+
+            <!-- Results -->
+            <div class="form-group">
+                <h3 class="col-sm-3">Results</h3>
+            </div>
+            <!-- User age -->
+            <div class="form-group">
+                <label class="control-label col-sm-2">Your age: </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control resultBmi resultBmiText" placeholder="You must be between 18 and 26 years old" name="userAge" readonly>
+                    </div>
+            </div>
+
+            <!-- User weight -->
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Your weight: </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control resultBmi resultInfo" placeholder="You must be between 50 and 90kg in weight" name="userWeight" readonly>
+                    </div>
+            </div>
+
+            <!-- User height -->
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Your height: </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control resultBmi resultInfo" placeholder="You must be between 150 and 190cm in height" name="userHeight" readonly>
+                    </div>
+            </div>
+
+            <!-- Reset button -->
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="reset" class="submitButton">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Scrypts -->
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/common.js"></script>
+    <script src="Scripts/jquery-1.9.1.intellisense.js"></script>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+</body>
+</html>
